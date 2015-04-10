@@ -1,0 +1,13 @@
+   Frontal_Inf_Orb_L <---> Insula_L                   IFGorb.L <---> INS.L   0.329831	0.024687	0.306856	0.021426
+   Frontal_Mid_Orb_L <---> Calcarine_L                MFGorb.L <---> CAL.L   0.255241	0.216735	0.033250	0.115181
+   Frontal_Sup_Orb_L <---> Lingual_L                  SFGorb.L <---> LING.L   0.232838	0.226382	0.032877	0.113888
+   Frontal_Mid_Orb_L <---> Lingual_L                  MFGorb.L <---> LING.L   0.257986	0.218865	0.033445	0.115857
+   Frontal_Inf_Orb_L <---> Lingual_L                  IFGorb.L <---> LING.L   0.234633	0.228234	0.033144	0.114815
+            Cuneus_L <---> Lingual_L                     CUN.L <---> LING.L   0.346822	0.029469	0.238746	0.146563
+   Frontal_Mid_Orb_L <---> Occipital_Sup_L            MFGorb.L <---> SOG.L   0.240832	0.205020	0.060223	0.141150
+   Frontal_Inf_Orb_L <---> Occipital_Sup_L            IFGorb.L <---> SOG.L   0.245900	0.209703	0.063059	0.147780
+   Frontal_Mid_Orb_L <---> Occipital_Mid_L            MFGorb.L <---> MOG.L   0.328411	0.171644	0.125822	0.186133
+   Frontal_Inf_Tri_L <---> Occipital_Mid_L            IFGtri.L <---> MOG.L   0.294334	0.185875	0.064358	0.150699
+   Frontal_Inf_Orb_L <---> Occipital_Mid_L            IFGorb.L <---> MOG.L   0.328029	0.173200	0.034248	0.118640
+         Calcarine_L <---> Precuneus_L                   CAL.L <---> PCUN.L   0.372673	0.044396	0.255115	0.155763
+   Frontal_Mid_Orb_L <---> Temporal_Pole_Mid_L        MFGorb.L <---> TPOmid.L   0.219112	0.185406	0.029176	0.101068

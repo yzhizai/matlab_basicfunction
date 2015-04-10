@@ -1,0 +1,12 @@
+1 Frontal_Sup_Orb_L 
+1 Frontal_Mid_Orb_L 
+1 Frontal_Inf_Tri_L 
+1 Frontal_Inf_Orb_L 
+1 Insula_L 
+1 Calcarine_L 
+1 Cuneus_L 
+1 Lingual_L 
+1 Occipital_Sup_L 
+1 Occipital_Mid_L 
+1 Precuneus_L 
+1 Temporal_Pole_Mid_L 

@@ -1,0 +1,11 @@
+﻿这个说明文件解释以下groupwise的使用方法：
+1、将需要作groupwise connectome analysis的两组.mat文件放置到两个文件夹下。
+
+
+%%%或者直接调用easy_demo.m程序
+2、运行mat2struct.m函数生成一个包含connection matrics的结构体。
+3、将上一步生成的结构体输入到snr_mat.m生成signal-to-noise(SNR)connection matrix，然后进行分析。
+4、当生成SNR矩阵之后，我们需要确定他们的backbone连接，采用size2cost.m函数确定cost值，将两组进行融合。
+5、当有了cost值之后，用threshold_proportional(W,pro)函数分别生成其backbone连接矩阵，比如snr_1_thr和snr_2_thr。
+然后在matlab命令行中，snr_thr = logical(snr_1_thr) | logical(snr_2_thr)。
+6、这样利用NBS_sub_txt(W_series,snr_thr，prefix)将.mat文件中的CM转换成txt格式。用于NBS软件做对比分析。
