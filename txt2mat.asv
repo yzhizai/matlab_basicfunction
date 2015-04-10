@@ -1,0 +1,25 @@
+function [] = txt2mat()
+% this function is used to change the CM.mat to the text filetype .
+% you just need to indentify the dir for the program.
+%Usage: [] = mat2matrix()
+pname = uigetdir();
+old_path = pwd;
+cd(pname)
+display(['current working directory is :' pname]);
+if exist('matfiles','dir')
+    rmdir('matfiles','s')
+end
+mkdir('matfiles');
+mylist =dir('*.txt');
+
+for aa = 1:numel(mylist)
+    tit_ext = strrep(mylist(aa).name,'.txt','.mat');
+    fname = fullfile(pname,'matfiles',tit_ext);
+    
+    CM = load(mylist(aa).name);
+    
+    save(fname,'CM');
+end
+cd(old_path)
+
+display(['current working directory is :' old_path]);
