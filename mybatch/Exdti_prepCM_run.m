@@ -1,9 +1,10 @@
 function out = Exdti_prepCM_run(job)
 
 filenames = job.filenames;
-nof = job.nof;
-symbol = job.symbol;
-prefix = job.prefix;
+para = job.para;
+nof = para.nof;
+symbol = para.symbol;
+prefix = para.prefix;
 
 [path,~,ext] = fileparts(filenames{1});
 fid = fopen(fullfile(path,'namelist.txt'),'w+');

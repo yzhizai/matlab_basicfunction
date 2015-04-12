@@ -26,10 +26,16 @@ input4.strtype = 's';
 input4.num = [1 Inf];
 input4.help = {'this define the output files prefixed tag'};
 
+para = cfg_branch;
+para.name = 'prep_parameters';
+para.tag = 'para';
+para.val = {input2 input3 input4};
+para.help = {'the fundamental parameters for perp part'};
+
 prepCM = cfg_exbranch;
 prepCM.name = 'prep_part';
 prepCM.tag = 'prepCM';
-prepCM.val = {input1 input2 input3 input4};
+prepCM.val = {input1 para};
 prepCM.prog = @Exdti_prepCM_run;
 prepCM.vout = @Exdti_prepCM_vout;
 
