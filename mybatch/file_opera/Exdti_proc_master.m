@@ -9,10 +9,10 @@ prep_part.help = {'this module is to preprocess mat files'};
 
 convert_part = cfg_repeat;
 convert_part.name = 'convert_part';
-convert_part.tag = 'mat2txt';
-convert_part.values = {cfg_mat2txt};
+convert_part.tag = 'convert_part';
+convert_part.values = {cfg_mat2txt,cfg_txt2mat};
 convert_part.forcestruct = true;
-convert_part.help = {'this module is to convert mat files to txt files'};
+convert_part.help = {'this module is to convert the type of files'};
 
 cfg = cfg_repeat;
 cfg.name = 'Exdti process';

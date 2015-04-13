@@ -7,4 +7,4 @@ for aa = 1:numel(filenames)
     txtfilenames = strrep(filenames{aa},'.mat','.txt');
     dlmwrite(txtfilenames,CM)
 end
-out = 1;
+out = filenames;

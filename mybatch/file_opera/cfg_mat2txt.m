@@ -6,7 +6,7 @@ input_file.tag = 'input_file';
 input_file.help = {'choose the files want to convert from mat type to txt type.'};
 
 mat2txt = cfg_exbranch;
-mat2txt.name = 'convert_part';
+mat2txt.name = 'mat_2_txt';
 mat2txt.tag = 'cfg_mat2txt';
 mat2txt.val = {input_file};
 mat2txt.prog = @cfg_mat2txt_run;
