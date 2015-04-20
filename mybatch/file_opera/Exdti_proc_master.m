@@ -24,7 +24,7 @@ weight_part.help = {'This part is used to weight the structural network with the
 thresh_part = cfg_repeat;
 thresh_part.name = 'thresh_part';
 thresh_part.tag = 'thresh_part';
-thresh_part.values = {cfg_signtest};
+thresh_part.values = {cfg_signtest cfg_thresh};
 thresh_part.forcestruct = true;
 thresh_part.help = {'This part is used to thresh the structural network'};
 

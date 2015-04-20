@@ -32,6 +32,7 @@ save(fullfile(path,'sig_mat.mat'),'sig_mat');
 thresh_value = thresh_value*2;  %for one-tailed test
 sig_mat_temp = zeros(90);
 sig_mat_temp(sig_mat <= thresh_value) = 1;
-out = sig_mat_temp;
+save(fullfile(path,'sig_mat_thresh.mat'),'sig_mat_temp');
+out{1} = fullfile(path,'sig_mat_thresh.mat');
 
 
