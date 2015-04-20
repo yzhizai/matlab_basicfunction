@@ -20,7 +20,6 @@ for bb = 1:90
     end
 end
 
-sig_mat = reshape(sig_mat,90,90);
 [fname pname] = uiputfile('*.mat','save file');
 save(fullfile(pname,fname),'sig_mat');
 cd(old_path)

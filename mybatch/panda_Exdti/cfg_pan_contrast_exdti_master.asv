@@ -1,5 +1,0 @@
-function cfg = cfg_pan_contrast_exdti_master
-
-cfg = cfg_repeat;
-cfg.name = 'pan_contra_exdti';
-cfg
