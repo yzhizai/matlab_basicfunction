@@ -28,10 +28,16 @@ thresh_part.values = {cfg_signtest cfg_thresh};
 thresh_part.forcestruct = true;
 thresh_part.help = {'This part is used to thresh the structural network'};
 
+output_part = cfg_repeat;
+output_part.name = 'output_part';
+output_part.tag = 'output_part';
+output_part.values = {cfg_namelist};
+output_part.forcestruct = true;
+output_part.help = {'This part is used to output the files'};
 
 cfg = cfg_repeat;
 cfg.name = 'Exdti process';
 cfg.tag = 'Exdti';
-cfg.values = {prep_part,convert_part,weight_part,thresh_part};
+cfg.values = {prep_part,convert_part,weight_part,thresh_part,output_part};
 cfg.forcestruct = true;
 cfg.help = {'the full modules'};
