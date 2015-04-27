@@ -8,3 +8,4 @@ for aa = 1:numel(filenames)
     out{aa} = txtfilenames;
     dlmwrite(txtfilenames,CM)
 end
+out = out;
