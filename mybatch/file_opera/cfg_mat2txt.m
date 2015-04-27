@@ -16,5 +16,5 @@ mat2txt.help = {'convert mat files to txt files'};
 function vout = cfg_mat2txt_vout(job)
 vout = cfg_dep;
 vout.sname = 'mat2txt: matfiles';
-vou.src_output = substruct('()',{1,':'});
+vou.src_output = substruct('()',{':'});
 

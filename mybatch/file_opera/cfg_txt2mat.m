@@ -16,4 +16,4 @@ txt2mat.help = {'convert txt files to mat files'};
 function vout = cfg_txt2mat_vout(job)
 vout = cfg_dep;
 vout.sname = 'txt2mat: txtfiles';
-vou.src_output = substruct('()',{1,':'});
+vou.src_output = substruct('()',{':'});
