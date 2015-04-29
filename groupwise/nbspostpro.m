@@ -5,7 +5,7 @@ function  [] = nbspostpro(subnet)
 %subnet presents the order of subnet.
 
 global nbs
-if ~exist('myconn','dir')
+if ~exist('./myconn','dir')
     mkdir myconn
 end
 adj = full(nbs.NBS.con_mat{subnet} + nbs.NBS.con_mat{subnet}');
