@@ -36,11 +36,10 @@ branch2.val = {input3,input4};
 branch2.help = {'using the thresh value to mask the connection matrices'};
 
 
-menu1 = cfg_menu;
+menu1 = cfg_choice;
 menu1.name = 'choose the mask method';
 menu1.tag = 'mymenu';
 menu1.values = {branch1,branch2};
-menu1.labels = {'branch1','branch2'};
 menu1.help = {'choose the mask method'};
 
 mythresh = cfg_exbranch;
