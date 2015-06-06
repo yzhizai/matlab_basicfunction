@@ -1,6 +1,6 @@
 function out = cfg_thresh_run(job)
 
-mask_file = job.mask;
+mymenu = job.mymenu;
 filenames = job.input_file;
 
 mymask = load(mask_file{1});
