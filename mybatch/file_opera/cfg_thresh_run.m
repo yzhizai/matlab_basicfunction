@@ -9,20 +9,20 @@ switch fidnames{:}
     case 'branch1'
         mask_file = job.mymenu.branch1.mask;
         mymask = load(mask_file{1});
-        if isfield(mymask,'sig_mat_temp')
-             S = substruct('.','sig_mat_temp');
+        if isfield(mymask,'mask')
+             S = substruct('.','mask');
              mask = subsref(mymask,S);
         else
-            error('the mat files should have the ''sig_mat_temp'' fields');
+            error('the mat files should have the ''mask'' fields');
         end
 
         for aa = 1:numel(filenames)
-            [path tit ext] = fileparts(filenames{aa});
+            [path, tit, ext] = fileparts(filenames{aa});
             CM = load(filenames{aa});
             S1 = substruct('.','CM');
-            CM = subsref(CM,S1);
+            CM = subsref(CM,S1).*mask;
             fname = fullfile(path,['m' tit ext]);
-            save(fname,CM)
+            save(fname,'CM')
             out{aa} = fname;
         end
     case 'branch2'
