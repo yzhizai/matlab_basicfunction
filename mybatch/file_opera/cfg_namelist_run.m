@@ -5,7 +5,7 @@ filenames = job.input_file;
 fid = fopen(fullfile(path,'namelist.txt'),'w+');
 for aa = 1:numel(filenames)
     [~,tit,~] = fileparts(filenames{aa});
-    fprintf(fid,'%s \r\n',tit);
+    fprintf(fid,'%s\r\n',tit);
 end
 fclose(fid);
 out = 1;
